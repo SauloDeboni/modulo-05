@@ -1,3 +1,4 @@
+"""Módulo do teste FizzBuzz para estudo de Python."""
 from tarefa_funcao import multiplo
 
 # Aplicação solicita ao usuário um número natural
@@ -7,10 +8,10 @@ while True:
 
     if natural == "sair":
         break
-    elif natural.isdigit() == False:
+    if natural.isdigit() is False:
         print("Tente novamente! Apenas números são aceitos.")
         print()
-    elif int(natural) < 0:
+    if int(natural) < 0:
         print("Tente novamente! Apenas número positivos são aceitos.")
         print()
     else:
